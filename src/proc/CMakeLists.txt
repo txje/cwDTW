@@ -5,7 +5,7 @@ MESSAGE(STATUS "building proc")
 
 include_directories(${PROJECT_SOURCE_DIR})
 
-add_library (proc STATIC ${PROC_SRCS})
+add_library (proc SHARED ${PROC_SRCS})
 
 target_link_libraries(proc)
 

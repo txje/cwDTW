@@ -1,3 +1,23 @@
+# This fork adds a very rough python wrapper.
+#
+# To install:
+#   mkdir build
+#   cd build
+#   cmake ..
+#   make
+#   export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$(pwd)/lib"
+#   cd ..
+#   python setup.py install
+#
+# To use:
+#   import cwdtw
+#   import numpy
+#   target = numpy.array(range(100), dtype='f4')
+#   query = target + numpy.random.randint(0, 5, 100, dtype='f4')
+#   band_width = 5
+#   diff, align_length, qstart, qend, tstart, tend = cwdtw.cwDTW(target, query, band_width)
+
+
 #==========
 # Abstract:
 #==========

@@ -3,7 +3,7 @@ aux_source_directory(. MER_SRCS)
 
 MESSAGE(STATUS "building 5mer")
 
-add_library (5mer STATIC ${MER_SRCS})
+add_library (5mer SHARED ${MER_SRCS})
 
 target_link_libraries(5mer)
 

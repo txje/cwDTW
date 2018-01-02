@@ -6,7 +6,7 @@ MESSAGE(STATUS "building util")
 
 include_directories(${PROJECT_SOURCE_DIR})
 
-add_library (util STATIC ${UTIL_SRCS})
+add_library (util SHARED ${UTIL_SRCS})
 
 target_link_libraries(util)
 

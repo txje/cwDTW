@@ -24,7 +24,7 @@ set(HEADER_FILES    conv.h
 					wtmath.h
                     )
 
-add_library(wavelib STATIC ${SOURCE_FILES} ${HEADER_FILES})
+add_library(wavelib SHARED ${SOURCE_FILES} ${HEADER_FILES})
         
 set_property(TARGET wavelib PROPERTY FOLDER "lib")
 
